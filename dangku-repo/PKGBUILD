@@ -1,0 +1,19 @@
+# Maintainer: Jefferson Gonzalez <jgmdev@gmail.com>
+
+pkgname=dangku-repo
+pkgver=1.1
+pkgrel=1
+pkgdesc="Repository with additional bananapi m5 packages not in alarm."
+arch=('aarch64')
+url="http://github.com/Dangku/"
+license=('MIT')
+depends=('pacman' 'grep' 'sed')
+install=INSTALL
+source=("dangku-mirrorlist")
+md5sums=('ee4fbf97c62fdd4f87a70241a8e3b26b')
+
+package(){
+    install -d ${pkgdir}/etc/pacman.d
+
+    cp ${srcdir}/dangku-mirrorlist ${pkgdir}/etc/pacman.d/
+}

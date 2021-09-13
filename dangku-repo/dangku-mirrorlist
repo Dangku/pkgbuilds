@@ -1,0 +1,13 @@
+#######################################################################
+## Usage on /etc/pacman.conf
+# [archlinuxdroid]
+# SigLevel = Optional TrustedOnly
+# Include = /etc/pacman.d/archdroid-mirrorlist
+#######################################################################
+
+### Dangku
+## local ftp
+Server = ftp://dangku:123456@10.0.1.9/archlinux/dangku/aarch64
+
+### Github
+Server = https://github.com/Dangku/archlinux-repo/releases/download/$arch

@@ -1,0 +1,44 @@
+pkgbase = linux-odroid-g12
+	pkgver = 4.9.241
+	pkgrel = 3
+	url = https://github.com/hardkernel/linux/tree/odroidg12-4.9.y
+	arch = aarch64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	makedepends = git
+	makedepends = uboot-tools
+	makedepends = vboot-utils
+	makedepends = dtc
+	options = !strip
+	source = https://github.com/hardkernel/linux/archive/662cd6d8e3e1517d50a56caf6ce19f8d0ef47a0b.tar.gz
+	source = config
+	source = linux.preset
+	source = 60-linux.hook
+	source = 90-linux.hook
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = 86d4a35722b5410e3b29fc92dae15d4b
+	md5sums = ce6c81ad1ad1f8b333fd6077d47abdaf
+	md5sums = 3dc88030a8f2f5a5f97266d99b149f77
+
+pkgname = linux-odroid-g12
+	pkgdesc = The Linux Kernel and modules - ODROID-N2/N2+/C4
+	install = linux-odroid-g12.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	provides = kernel26
+	provides = linux=4.9.241
+	conflicts = linux
+	backup = etc/mkinitcpio.d/linux-odroid-g12.preset
+
+pkgname = linux-odroid-g12-headers
+	pkgdesc = Header files and scripts for building modules for linux kernel - ODROID-N2/N2+/C4
+	provides = linux-headers=4.9.241
+	conflicts = linux-headers

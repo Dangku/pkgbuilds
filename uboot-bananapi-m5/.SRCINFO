@@ -1,0 +1,34 @@
+pkgbase = uboot-bananapi-m5
+	pkgdesc = U-Boot for BANANAPI M5/M2PRO
+	pkgver = 2015.01.189
+	pkgrel = 1
+	url = https://github.com/Dangku/amlogic-u-boot
+	install = uboot-bananapi-c4.install
+	arch = aarch64
+	license = GPL
+	depends = uboot-tools
+	depends = util-linux
+	depends = gawk
+	depends = sed
+	conflicts = uboot-odroid-n2
+	source = https://github.com/Dangku/amlogic-u-boot/releases/download/dangku/bananapi-m5-001/u-boot-bananapi-m5-001.tar.gz
+	source = https://github.com/akatrevorjay/edid-generator/archive/31a6f80784d289d2faa8c4ca4788409c83b3ea14.tar.gz
+	source = edid.md
+	source = sd_fusing.sh
+	source = 91-uboot-uimg.hook
+	source = 92-uboot-bootini.hook
+	source = boot.mainline.ini
+	source = boot.bananapi.ini
+	source = bananapi-bootini
+	md5sums = 0e1aee751e49caed9726d81bb76d537f
+	md5sums = 4be5fae86f996be8540a4344a8b8c120
+	md5sums = 1e821a54a437e11876940e8446819ecf
+	md5sums = 3bd43e59c5f88a7544505288627fe2dd
+	md5sums = 1931c8dfde7088530f173ca59fdb8989
+	md5sums = 7edc985e2fa767f5ecbf989c24d85ee6
+	md5sums = 06f54b405a6f31d6f179ed0e011f4f2e
+	md5sums = a28ce2ea99f6849f3ddea8a0c4d9348a
+	md5sums = 226d6187e9e8e24e27d1375eec08c980
+
+pkgname = uboot-bananapi-m5
+
