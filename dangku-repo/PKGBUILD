@@ -10,7 +10,7 @@ license=('MIT')
 depends=('pacman' 'grep' 'sed')
 install=INSTALL
 source=("dangku-mirrorlist")
-md5sums=('ee4fbf97c62fdd4f87a70241a8e3b26b')
+md5sums=('775008b60c23cae0f5bb41b65b20b6ab')
 
 package(){
     install -d ${pkgdir}/etc/pacman.d
